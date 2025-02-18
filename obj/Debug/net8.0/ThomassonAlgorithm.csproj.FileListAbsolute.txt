@@ -1,0 +1,14 @@
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/obj/Debug/net8.0/ThomassonAlgorithm.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/obj/Debug/net8.0/ThomassonAlgorithm.AssemblyInfoInputs.cache
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/obj/Debug/net8.0/ThomassonAlgorithm.AssemblyInfo.cs
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/obj/Debug/net8.0/ThomassonAlgorithm.csproj.CoreCompileInputs.cache
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/bin/Debug/net8.0/ThomassonAlgorithm
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/bin/Debug/net8.0/ThomassonAlgorithm.deps.json
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/bin/Debug/net8.0/ThomassonAlgorithm.runtimeconfig.json
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/bin/Debug/net8.0/ThomassonAlgorithm.dll
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/bin/Debug/net8.0/ThomassonAlgorithm.pdb
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/obj/Debug/net8.0/ThomassonAlgorithm.dll
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/obj/Debug/net8.0/refint/ThomassonAlgorithm.dll
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/obj/Debug/net8.0/ThomassonAlgorithm.pdb
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/obj/Debug/net8.0/ThomassonAlgorithm.genruntimeconfig.cache
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomassonAlgorithm/obj/Debug/net8.0/ref/ThomassonAlgorithm.dll
