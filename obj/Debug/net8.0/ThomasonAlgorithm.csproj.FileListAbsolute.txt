@@ -139,3 +139,4 @@
 /Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomasonAlgorithm/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
 /Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomasonAlgorithm/obj/Debug/net8.0/ThomasonAlgorithm.csproj.AssemblyReference.cache
 /Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomasonAlgorithm/obj/Debug/net8.0/Thomason.CDE3664C.Up2Date
+/Users/dmitrii/Documents/МФТИ/НИР/алгоритм Томассона/ThomasonAlgorithm/obj/Debug/net8.0/ThomasonAlgorithm.sourcelink.json
