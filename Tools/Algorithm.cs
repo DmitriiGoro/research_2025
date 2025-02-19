@@ -1,5 +1,6 @@
-using ThomasonAlgorithm;
 using ThomasonAlgorithm.obj;
+
+namespace ThomasonAlgorithm.Tools;
 
 public class Algorithm
 {

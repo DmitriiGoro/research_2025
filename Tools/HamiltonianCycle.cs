@@ -1,6 +1,4 @@
-namespace ThomasonAlgorithm;
-
-using System;
+namespace ThomasonAlgorithm.Tools;
 
 public class HamiltonianCycle
 {
