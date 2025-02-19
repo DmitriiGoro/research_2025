@@ -81,8 +81,7 @@ public class HamiltonianCycle
             // добавляем в словарь ребер цикла вершину из 0-ой вершины в последнюю и наоборот
             cycleEdges[path[0]].Add(path[^1]);
             cycleEdges[path[^1]].Add(path[0]);
-            // Console.Write(path[0] + " ");
-            //
+
             for (int i = 1; i < n; i++)
             {
                 cycleEdges[path[i]].Add(path[i - 1]);
@@ -90,7 +89,6 @@ public class HamiltonianCycle
                 // Console.Write(path[i] + " ");
                 // Console.WriteLine($"вершина {path[i]} имеет соседей {path[i]} и {path[i - 1]} ");
             }
-            // Console.WriteLine();
             
             return cycleEdges;
         }
@@ -102,19 +100,6 @@ public class HamiltonianCycle
 
     public static Dictionary<int, List<int>> GetHamiltonianCycle(int[,] graph)
     {
-        // int[,] graph = new int[,] {
-        //     { 0, 0, 0, 1, 0, 0, 0, 1, 0, 1 },
-        //     { 0, 0, 1, 0, 1, 0, 0, 0, 1, 0 },
-        //     { 0, 1, 0, 0, 0, 1, 0, 0, 0, 1 },
-        //     { 1, 0, 0, 0, 1, 0, 1, 0, 0, 1 },
-        //     { 0, 1, 0, 1, 0, 0, 0, 1, 0, 0 },
-        //     { 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 },
-        //     { 0, 0, 0, 1, 0, 1, 0, 0, 0, 1 },
-        //     { 1, 0, 0, 0, 1, 1, 0, 0, 0, 0 },
-        //     { 0, 1, 0, 0, 0, 1, 0, 1, 0, 0 },
-        //     { 1, 0, 1, 1, 0, 0, 1, 0, 0, 0 }
-        // };
-
         var cycle = HamiltonianCycleExists(graph);
 
         return cycle;
