@@ -6,7 +6,6 @@ namespace ThomasonAlgorithm.Tools;
 public class CubicGraphWithChords
 {
     public int N { get; private set; }
-    // adjacencyList[v] хранит список соседей вершины v
     public List<int>[] AdjacencyList { get; private set; }
 
     public int MaxChordLength = -1;
@@ -102,9 +101,7 @@ public static class CubicGraphGenerator
                 graph.AddEdge(i, j);
             }
 
-            // 3. Сформируем список всех "допустимых" рёбер (хорд), 
-            //    которые могут быть добавлены, чтобы не превышать длину k.
-            var chordCandidates = new List<(int, int)>();
+            // для каждой вершины создадим список ее потенциальных соседей
             var possibleNeighbors = new Dictionary<int, HashSet<int>>();
 
             for (int i = 0; i < n; i++)
@@ -122,7 +119,6 @@ public static class CubicGraphGenerator
                     int dist = Math.Min(Math.Abs(j - i), n - Math.Abs(j - i));
                     if (dist <= k)
                     {
-                        chordCandidates.Add((i, j));
                         possibleNeighbors[i].Add(j);
                         possibleNeighbors[j].Add(i);
                     }
@@ -133,13 +129,8 @@ public static class CubicGraphGenerator
             // чтобы каждая вершина была выбрана ровно один раз.
             // Попробуем рандомизированный бэктрекинг.
 
-            // Перемешаем кандидатов, чтобы граф был "случайным"
-            ////////
-            // Shuffle(chordCandidates);
-            ///////
-
             // Найдём совершенное паросочетание
-            var matching = FindPerfectMatching(n, chordCandidates, possibleNeighbors, graph);
+            var matching = FindPerfectMatching(n, possibleNeighbors, graph);
 
             if (matching != null)
             {
@@ -162,11 +153,9 @@ public static class CubicGraphGenerator
     }
 
     // Рандомизированная функция поиска совершенного паросочетания (упрощённо)
-    // chordCandidates: все возможные хорды (u,v), удовлетворя dist(u,v) <= k
     // graph: уже содержит рёбра цикла (чтобы мы не делали дубликатов и не нарушали степень)
     private static List<(int,int)> FindPerfectMatching(
         int n, 
-        List<(int,int)> chordCandidates,
         Dictionary<int, HashSet<int>> possibleNeighbors,
         CubicGraphWithChords graph)
     {
@@ -199,7 +188,7 @@ public static class CubicGraphGenerator
         var result = new List<(int,int)>();
         var maxChordLength = -1;
         
-        // моя реализация поиска возможной хорды
+        // реализация поиска возможной хорды
         for (var i = 0; i < n; i++)
         {
             var possibleNeighborsList = possibleNeighbors[i].ToList();
@@ -240,18 +229,6 @@ public static class CubicGraphGenerator
                 return null;
             }
         }
-
-        // foreach (var (u, v) in chordCandidates)
-        // {
-        //     // Если обе вершины ещё нуждаются в ребре
-        //     if (!usedInMatching[u] && !usedInMatching[v])
-        //     {
-        //         // Добавим ребро в итоговое паросочетание
-        //         result.Add((u, v));
-        //         usedInMatching[u] = true;
-        //         usedInMatching[v] = true;
-        //     }
-        // }
 
         // Проверяем, все ли вершины получили по одному ребру
         for (int i = 0; i < n; i++)

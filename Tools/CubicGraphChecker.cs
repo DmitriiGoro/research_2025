@@ -17,7 +17,6 @@ public static class CubicGraphChecker
                 Console.WriteLine($"Граф не кубический, проблема в {i}-ой строке");
                 return false;
             }
-            // throw new Exception($"Граф не кубический, проблема в {i}-ой строке");
 
         }
         
@@ -29,7 +28,6 @@ public static class CubicGraphChecker
                 {
                     if (graph[j, i] != 1)
                     {
-                        // throw new Exception($"Матрица смежности построена неверно, проблема в паре {i}-{j}");
                         Console.WriteLine($"Матрица смежности построена неверно, проблема в паре {i}-{j}");
                         return false;
                     }
