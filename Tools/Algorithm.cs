@@ -11,6 +11,7 @@ public class Algorithm
         _graph = graph;
     }
 
+    // метод возвращает набор вершин в порядке нахождения их в цикле
     public HashSet<int> FindSecondHamiltonianCycle()
     {
         ReconstructCycle();
@@ -52,10 +53,6 @@ public class Algorithm
         
         // разъединяем стартовую вершину и первого ее соседа
         var neighborToUnlink = hamiltonianCycle[startVertex][0];
-        
-        // только для дебага на своем графе
-        // var neighborToUnlink = hamiltonianCycle[startVertex][1];
-        // hamiltonianCycle[startVertex][1] = -1;
         
         hamiltonianCycle[startVertex][0] = -1;
         

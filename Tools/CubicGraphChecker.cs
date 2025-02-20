@@ -1,5 +1,8 @@
 namespace ThomasonAlgorithm.Tools;
 
+/// <summary>
+/// алгоритм для проверки корректности матрицы-смежности кубического графа
+/// </summary>
 public static class CubicGraphChecker
 {
     public static bool CheckGraph(int[,] graph)
